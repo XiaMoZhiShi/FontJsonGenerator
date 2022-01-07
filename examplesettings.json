@@ -1,0 +1,351 @@
+{
+    "name": "default",
+    "starts": "E300",
+    "ranges":
+    [
+        {
+            "prefix": "item/music_disc_",
+            "values":
+            [
+                "11", "13", "blocks", "cat", "chirp",
+                "far", "mall", "mellohi", "otherside",
+                "pigstep", "stal", "strad", "wait", "ward"
+            ]
+        },
+        //工具和武器
+        {
+            "prefix": "item/wooden_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        {
+            "prefix": "item/stone_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        {
+            "prefix": "item/iron_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        {
+            "prefix": "item/golden_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        {
+            "prefix": "item/diamond_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        {
+            "prefix": "item/netherite_",
+            "values":
+            [
+                "axe", "hoe", "pickaxe", "shovel", "sword"
+            ]
+        },
+        //其他工具
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "elytra", "broken_elytra",
+                "fishing_rod", "flint_and_steel",
+                "shears", "spyglass"
+            ]
+        },
+        //其他武器
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "bow", "crossbow_standby", "crossbow_firework",
+                "trident"
+            ]
+        },
+        //防具
+        {
+            "prefix": "item/iron_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/golden_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/diamond_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/netherite_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/chainmail_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/leather_",
+            "values":
+            [
+                "boots", "leggings", "chestplate", "helmet"
+            ]
+        },
+        {
+            "prefix": "item/",
+            "values": [ "turtle_helmet" ]
+        },
+        //交通运输
+        {
+            "prefix": "block/",
+            "suffix": "rail",
+            "values":
+            [
+                "", "powered_", "detector_", "activator_"
+            ]
+        },
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "saddle", "minecart", "chest_minecart",
+                "furnace_minecart", "tnt_minecart",
+                "hopper_minecart", "command_block_minecart",
+                "oak_boat", "spruce_boat", "birch_boat",
+                "jungle_boat", "acacia_boat", "dark_oak_boat",
+                "carrot_on_a_stick", "warped_fungus_on_a_stick"
+            ]
+        },
+        //矿物
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "amethyst_shard", "coal", "copper_ingot",
+                "diamond", "emerald", "gold_ingot", "iron_ingot",
+                "lapis_lazuli", "netherite_ingot",
+                "netherite_scrap", "quartz", "raw_copper", "raw_gold",
+                "raw_iron", "gold_nugget", "iron_nugget"
+            ]
+        },
+        //蜡烛
+        {
+            "prefix": "item/",
+            "suffix": "candle",
+            "values":
+            [
+                "", "black_", "blue_",
+                "brown_", "cyan_", "gray_",
+                "green_", "light_blue_", "light_gray_",
+                "lime_", "magenta_", "orange_",
+                "pink_", "purple_", "red_", "white_",
+                "yellow_"
+            ]
+        },
+        //马铠
+        {
+            "prefix": "item/",
+            "suffix": "_horse_armor",
+            "values":
+            [
+                "leather", "iron", "golden", "diamond"
+            ]
+        },
+        //酿造
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "brewing_stand", "cauldron", "dragon_breath",
+                "fermented_spider_eye", "ghast_tear", "glistering_melon_slice",
+                "magma_cream", "nether_wart", "phantom_membrane",
+                "rabbit_foot"
+            ]
+        },
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "potion", "splash_potion", "lingering_potion"
+            ]
+        },
+        //染料
+        {
+            "prefix": "item/",
+            "suffix": "dye",
+            "values":
+            [
+                "black_", "blue_",
+                "brown_", "cyan_", "gray_",
+                "green_", "light_blue_", "light_gray_",
+                "lime_", "magenta_", "orange_",
+                "pink_", "purple_", "red_", "white_",
+                "yellow_"
+            ]
+        },
+        //种子
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "beetroot_seeds", "cocoa_beans", "melon_seeds",
+                "pumpkin_seeds", "wheat_seeds", "sugar_cane"
+            ]
+        },
+        //食物
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "apple", "potato", "baked_potato", "beetroot", "beetroot_soup",
+                "bread", "cake", "carrot", "cookie", "dried_kelp", "glow_berries",
+                "golden_apple", "golden_carrot", "melon_slice", "honey_bottle",
+                "poisonous_potato", "suspicious_stew", "sweet_berries",
+                "chorus_fruit", "mushroom_stew", "pumpkin_pie",
+
+                "beef", "cooked_beef", "chicken", "cooked_chicken",
+                "rabbit", "cooked_rabbit", "rabbit_stew",
+                "mutton", "cooked_mutton", "porkchop", "cooked_porkchop",
+                "cod", "cooked_cod", "salmon", "cooked_salmon",
+                "pufferfish", "tropical_fish",
+
+                "spider_eye", "rotten_flesh"
+            ]
+        },
+        //桶
+        {
+            "prefix": "item/",
+            "suffix": "bucket",
+            "values":
+            [
+                "", "water_", "axolotl_", "cod_", "pufferfish_",
+                "salmon_", "tropical_fish_", "lava_", "milk_",
+                "powder_snow_"
+            ]
+        },
+        //红石
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "redstone", "repeater", "comparator", "hopper"
+            ]
+        },
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "redstone_torch", "redstone_block",
+                "piston_top", "piston_top_sticky",
+                "slime_block", "honey_block_bottom",
+                "observer_front", "dispenser_front",
+                "dropper_front", "lectern_top",
+                "target_top", "lever",
+                "daylight_detector_top", "daylight_detector_inverted_top",
+                "tripwire_hook", "tnt_side", "redstone_lamp",
+                "note_block"
+            ]
+        },
+        {
+            "prefix": "entity/chest/",
+            "values":
+            [
+                "normal", "trapped"
+            ]
+        },
+        {
+            "prefix": "item/",
+            "suffix": "_door",
+            "values":
+            [
+                "iron", "oak", "spruce", "birch", 
+                "jungle", "acacia", "dark_oak",
+                "crimson", "warped"
+            ]
+        },
+        //告示牌
+        {
+            "prefix": "item/",
+            "suffix": "_sign",
+            "values":
+            [
+                "oak", "spruce", "birch", 
+                "jungle", "acacia", "dark_oak",
+                "crimson", "warped"
+            ]
+        },
+        //杂项
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "armor_stand", "arrow", "bamboo", "barrier",
+                "bell", "blaze_powder", "blaze_rod", "bone",
+                "bone_meal", "book", "writable_book",
+                "written_book", "enchanted_book", "knowledge_book",
+                "bowl", "brick", "bundle", "bundle_filled",
+                "campfire", "soul_campfire", "charcoal", "clay_ball",
+                "clock_10", "compass_10", "egg",
+                "end_crystal", "ender_eye", "ender_pearl",
+                "experience_bottle", "feather", "fire_charge", "firework_rocket",
+                "flint", "globe_banner_pattern",
+                "ink_sac", "glow_ink_sac",
+                "item_frame", "glow_item_frame",
+                "glowstone_dust", "gunpowder", 
+                "heart_of_the_sea", "honeycomb", "kelp",
+                "lantern", "soul_lantern",
+                "lead", "leather",
+                "light", "light_15",
+                "name_tag", "nautilus_shell", "nether_brick",
+                "nether_sprouts", "nether_star", "painting",
+                "paper", "pointed_dripstone", "popped_chorus_fruit",
+                "prismarine_crystals", "prismarine_shard",
+                "rabbit_hide", "scute", "seagrass", "sea_pickle",
+                "shulker_shell", "slime_ball", "snowball", "spectral_arrow",
+                "stick", "string", "structure_void", "sugar", "totem_of_undying",
+                "turtle_egg", "wheat", "chain", "map"
+            ]
+        },
+        //药水效果
+        {
+            "prefix": "mob_effect/",
+            "values":
+            [
+                "absorption", "bad_omen", "blindness", "conduit_power",
+                "dolphins_grace", "fire_resistance", "glowing", "haste",
+                "health_boost", "hero_of_the_village", "hunger", "instant_damage",
+                "instant_health", "invisibility", "jump_boost", "levitation",
+                "luck", "mining_fatigue", "nausea", "night_vision",
+                "poison", "regeneration", "resistance", "saturation",
+                "slow_falling", "slowness", "speed", "strength",
+                "unluck", "water_breathing", "weakness", "wither"
+            ]
+        }
+    ]
+}
