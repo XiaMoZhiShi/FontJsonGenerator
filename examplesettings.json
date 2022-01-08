@@ -1,8 +1,95 @@
 {
     "name": "default",
-    "starts": "E300",
-    "ranges":
+    "starts": "E000",
+    "ranges": 
     [
+        {
+            "type": "raw",
+            "skips": 256,
+            "provider":
+            {
+                "type": "bitmap",
+                "file": "xmzs:bedrock_glyphs/e0.png",
+                "ascent": 11,
+                "height": 16,
+                "chars": [
+                    "\ue000\ue001\ue002\ue003\ue004\ue005\ue006\ue007\ue008\ue009\ue00a\ue00b\ue00c\ue00d\ue00e\ue00f",
+                    "\ue010\ue011\ue012\ue013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue020\ue021\ue022\ue023\ue024\ue025\ue026\ue027\ue028\ue029\ue02a\ue02b\ue02c\ue02d\ue02e\ue02f",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue040\ue041\ue042\ue043\ue044\ue045\ue046\ue047\ue048\ue049\ue04a\ue04b\ue04c\ue04d\ue04e\ue04f",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue060\ue061\ue062\ue063\u0000\ue065\ue066\ue067\ue068\ue069\ue06a\ue06b\ue06c\ue06d\ue06e\ue06f",
+                    "\ue070\ue071\ue072\ue073\u0000\ue075\ue076\ue077\ue078\ue079\ue07a\ue07b\ue07c\ue07d\ue07e\ue07f",
+                    "\ue080\ue081\ue082\ue083\ue084\ue085\ue086\ue087\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue0a0\ue0a1\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue0c0\ue0c1\ue0c2\ue0c3\ue0c4\ue0c5\ue0c6\ue0c7\ue0c8\ue0c9\ue0ca\ue0cb\ue0cc\ue0cd\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\ue0e0\ue0e1\ue0e2\ue0e3\ue0e4\ue0e5\ue0e6\ue0e7\ue0e8\ue0e9\ue0ea\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+                ]
+            }
+        },
+        {
+            "type": "raw",
+            "skips": 256,
+            "provider":
+            {
+                "type": "bitmap",
+                "file": "xmzs:bedrock_glyphs/e1.png",
+                "ascent": 11,
+                "height": 16,
+                "chars":
+                [
+                    "\ue100\ue101\ue102\ue103\ue104\ue105\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+                ]
+            }
+        },
+        {
+            "type": "raw",
+            "skips": 256,
+            "provider":
+            {
+                "type": "bitmap",
+                "file": "minecraft:map/map_icons.png",
+                "ascent": 7,
+                "chars": [
+                    "\ue200\ue201\ue202\ue203\ue204\ue205\ue206\ue207\ue208\ue209\ue20a\ue20b\ue20c\ue20d\ue20e\ue20f",
+                    "\ue210\ue211\ue212\ue213\ue214\ue215\ue216\ue217\ue218\ue219\ue21a\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+                ]
+            }
+        },
         {
             "prefix": "item/music_disc_",
             "values":
@@ -111,6 +198,7 @@
             ]
         },
         {
+            "namespace": "xmzs",
             "prefix": "item/leather_",
             "values":
             [
@@ -189,10 +277,11 @@
             ]
         },
         {
+            "namespace": "xmzs",
             "prefix": "item/",
             "values":
             [
-                "potion", "splash_potion", "lingering_potion"
+                "potion", "splash_potion", "lingering_potion", "tipped_arrow"
             ]
         },
         //染料
@@ -249,6 +338,19 @@
                 "powder_snow_"
             ]
         },
+        //烟火之星、地图
+        {
+            "namespace": "xmzs",
+            "prefix": "item/",
+            "values":
+            [
+                "firework_star", "filled_map"
+            ]
+        },
+        {
+            "prefix": "item/",
+            "values": ["map"]
+        },
         //红石
         {
             "prefix": "item/",
@@ -284,9 +386,17 @@
             "suffix": "_door",
             "values":
             [
-                "iron", "oak", "spruce", "birch", 
+                "iron", "oak", "spruce", "birch",
                 "jungle", "acacia", "dark_oak",
                 "crimson", "warped"
+            ]
+        },
+        {
+            "namespace": "xmzs",
+            "suffix": "_generic",
+            "values":
+            [
+                "button", "pressure_plate", "trapdoor", "fencegate"
             ]
         },
         //告示牌
@@ -295,7 +405,7 @@
             "suffix": "_sign",
             "values":
             [
-                "oak", "spruce", "birch", 
+                "oak", "spruce", "birch",
                 "jungle", "acacia", "dark_oak",
                 "crimson", "warped"
             ]
@@ -317,7 +427,7 @@
                 "flint", "globe_banner_pattern",
                 "ink_sac", "glow_ink_sac",
                 "item_frame", "glow_item_frame",
-                "glowstone_dust", "gunpowder", 
+                "glowstone_dust", "gunpowder",
                 "heart_of_the_sea", "honeycomb", "kelp",
                 "lantern", "soul_lantern",
                 "lead", "leather",
@@ -329,7 +439,7 @@
                 "rabbit_hide", "scute", "seagrass", "sea_pickle",
                 "shulker_shell", "slime_ball", "snowball", "spectral_arrow",
                 "stick", "string", "structure_void", "sugar", "totem_of_undying",
-                "turtle_egg", "wheat", "chain", "map"
+                "turtle_egg", "wheat", "chain"
             ]
         },
         //药水效果
@@ -347,5 +457,14 @@
                 "unluck", "water_breathing", "weakness", "wither"
             ]
         }
-    ]
+    ],
+    "glyph":
+    {
+        "enabled": false,
+        "tileSize": 16,
+        "from": 0,
+        "to": 65536,
+        "pack_path": "/path/to/resourcepackRoot",
+        "fallback": "namespace:path/to/fallback/texture.png"
+    }
 }

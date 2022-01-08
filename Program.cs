@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using FontJsonGenerator.GenerateConfig;
+using FontJsonGenerator.Generator;
+using Newtonsoft.Json;
 
 namespace FontJsonGenerator;
 
@@ -10,11 +12,17 @@ public static class Program
         MissingMemberHandling = MissingMemberHandling.Ignore
     };
 
-    private static string inputFilePath;
+    private static string? inputFilePath;
 
-    private static string outputFilePath;
+    private static string? outputFilePath;
 
-    public static void Main(string[] args)
+    private static bool generateGlyph;
+
+    private static FontGenConfig? fontGenConfig;
+
+    private static GlyphGenConfig glyphGenConfig => fontGenConfig.GlyphGenConfig;
+
+    public static void Main(string?[] args)
     {
         if (args.Length < 1)
         {
@@ -52,15 +60,19 @@ public static class Program
             throw new FileNotFoundException($"没有找到文件({inputFilePath})，请检查地址");
 
         string fileContent = File.ReadAllText(inputFilePath).Replace("\\", "\\\\");
+        fontGenConfig = JsonConvert.DeserializeObject<FontGenConfig>(fileContent, SerializerSettings)!;
+        generateGlyph = fontGenConfig.GlyphGenConfig.Enabled;
 
-        Convert(JsonConvert.DeserializeObject<FontGenConfig>(fileContent, SerializerSettings));
+        GenerateJson(fontGenConfig);
+
+        if (generateGlyph) glyphGenerator.Generate(glyphGenConfig, charaterMap);
     }
 
-    private static void Convert(FontGenConfig? fontConfig)
-    {
-        if (fontConfig == null)
-            throw new NullReferenceException("字体生成配置不能是null");
+    private static Dictionary<int, string> charaterMap = new Dictionary<int, string>();
+    private static GlyphGenerator glyphGenerator = new GlyphGenerator();
 
+    private static void GenerateJson(FontGenConfig fontConfig)
+    {
         var fontProperty = new MinecraftFontProperty();
         int currentUnicodeId = fontConfig.StartsAt;
 
@@ -78,20 +90,29 @@ public static class Program
                 case "normal":
                     foreach (var value in rangeinfo.Values)
                     {
+                        string resourcePath = rangeinfo.NameSpace
+                                              + ":"
+                                              + rangeinfo.Prefix
+                                              + value
+                                              + rangeinfo.Suffix
+                                              + ".png";
+
                         var providerProperty = new MinecraftFontProviderProperty
                         {
                             Ascent = 7,
                             Type = ProviderType.Bitmap,
                             Charaters = new[] { $@"\u{currentUnicodeId:X}" },
-                            ResourcePath = rangeinfo.NameSpace
-                                           + ":"
-                                           + rangeinfo.Prefix
-                                           + value
-                                           + rangeinfo.Suffix
-                                           + ".png"
+                            ResourcePath = resourcePath
                         };
 
                         fontProperty.Providers.Add(providerProperty);
+
+                        if (generateGlyph
+                            && currentUnicodeId >= glyphGenConfig.StartAt
+                            && currentUnicodeId <= glyphGenConfig.EndsAt)
+                        {
+                                charaterMap[currentUnicodeId] = resourcePath;
+                        }
 
                         currentUnicodeId += 1 + rangeinfo.Skips;
                     }

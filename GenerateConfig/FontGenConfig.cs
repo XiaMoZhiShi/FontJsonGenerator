@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace FontJsonGenerator;
+namespace FontJsonGenerator.GenerateConfig;
 
 [Serializable]
 public class FontGenConfig
@@ -33,6 +33,9 @@ public class FontGenConfig
     /// </summary>
     [JsonProperty("ranges")]
     public RangeInfo[] Ranges { get; set; } = Array.Empty<RangeInfo>();
+    
+    [JsonProperty("glyph")]
+    public GlyphGenConfig GlyphGenConfig { get; set; }
 
     public override string ToString() => JsonConvert.SerializeObject(this);
 }
