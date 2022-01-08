@@ -14,6 +14,12 @@ public class GlyphGenConfig
     [JsonProperty("tileSize")]
     public int TileSize { get; set; }
 
+    [JsonProperty("spacing_x")]
+    public int HorizonalSpacing { get; set; }
+
+    [JsonProperty("spacing_y")]
+    public int VerticalSpacing { get; set; }
+
     [JsonProperty("from")]
     public int StartAt { get; set; }
 
