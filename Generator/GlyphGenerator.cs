@@ -48,7 +48,7 @@ public class GlyphGenerator
             {
                 //加载纹理
                 using var targetImage = Image.Load(filePath);
-                
+
                 Console.WriteLine($"{index} / {map.Count}: draw {path} at {point}");
                 drawImage(targetImage, glyphImage, point, glyphConfig);
 

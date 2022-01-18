@@ -35,7 +35,7 @@ public class FontGenConfig
     public RangeInfo[] Ranges { get; set; } = Array.Empty<RangeInfo>();
     
     [JsonProperty("glyph")]
-    public GlyphGenConfig GlyphGenConfig { get; set; }
+    public GlyphGenConfig? GlyphGenConfig { get; set; }
 
     public override string ToString() => JsonConvert.SerializeObject(this);
 }
