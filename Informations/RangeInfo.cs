@@ -1,7 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
+using FontJsonGenerator.GenerateConfig;
 using Newtonsoft.Json;
 
-namespace FontJsonGenerator;
+namespace FontJsonGenerator.Informations;
 
 public class RangeInfo
 {
@@ -37,6 +38,12 @@ public class RangeInfo
     [JsonProperty("values")]
     public string[] Values { get; set; } = Array.Empty<string>();
 
+    [JsonProperty("ascent")]
+    public int Ascent;
+
+    [JsonProperty("height")]
+    public int Height;
+
     #endregion
 
     /// <summary>
@@ -53,6 +60,13 @@ public class RangeInfo
     [AllowNull]
     [JsonProperty("provider")]
     public MinecraftFontProviderProperty ProviderProperty { get; set; }
+
+    #endregion
+
+    #region tilemap
+
+    [JsonProperty("tile")]
+    public TileMapConfig TileMapConfig { get; set; }
 
     #endregion
 }

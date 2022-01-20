@@ -1,6 +1,8 @@
 {
     "name": "default",
     "starts": "E000",
+    "target": "/home/neko/1.json",
+    "temp": "/dev/shm/work/",
     "ranges": 
     [
         {
@@ -63,31 +65,24 @@
             }
         },
         {
-            "type": "raw",
-            "skips": 256,
-            "provider":
+            "type": "tilemap",
+            "ascent": 7,
+            "tile":
             {
-                "type": "bitmap",
-                "file": "minecraft:map/map_icons.png",
-                "ascent": 7,
-                "chars": [
-                    "\ue200\ue201\ue202\ue203\ue204\ue205\ue206\ue207\ue208\ue209\ue20a\ue20b\ue20c\ue20d\ue20e\ue20f",
-                    "\ue210\ue211\ue212\ue213\ue214\ue215\ue216\ue217\ue218\ue219\ue21a\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-                    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
-                ]
+                "glyph_ignore": false,
+                "size": 8,
+                "startsAt":
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                "endsAt":
+                {
+                    "x": 10,
+                    "y": 1
+                },
+                "resource_location": "minecraft:map/map_icons.png",
+                "texture_path": "/home/neko/repo/xmzs-resources/build/work"
             }
         },
         {
@@ -460,11 +455,12 @@
     ],
     "glyph":
     {
-        "enabled": false,
+        "enabled": true,
         "tileSize": 16,
         "from": 0,
         "to": 65536,
-        "pack_path": "/path/to/resourcepackRoot",
-        "fallback": "namespace:path/to/fallback/texture.png"
+        "pack_path": "/home/neko/repo/xmzs-resources/build/work",
+        "fallback": "namespace:path/to/fallback/texture.png",
+        "save_step": true
     }
 }

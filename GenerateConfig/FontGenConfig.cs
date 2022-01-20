@@ -1,3 +1,4 @@
+using FontJsonGenerator.Informations;
 using Newtonsoft.Json;
 
 namespace FontJsonGenerator.GenerateConfig;
@@ -11,6 +12,15 @@ public class FontGenConfig
     /// </summary>
     [JsonProperty("name")]
     public string FontName { get; set; } = "???";
+
+    /// <summary>
+    /// 输出目标，可以是 stdout(到终端), file(到文件), null(无)
+    /// </summary>
+    [JsonProperty("target")]
+    public string OptoutTarget { get; set; } = "null";
+
+    [JsonProperty("temp")]
+    public string TempFileDirectory { get; set; } = "/dev/shm";
 
     /// <summary>
     /// 起始Unicode位置（string）
