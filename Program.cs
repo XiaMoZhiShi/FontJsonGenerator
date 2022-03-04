@@ -99,7 +99,6 @@ public static class Program
                 {
                     var tileConfig = rangeinfo.TileMapConfig;
 
-                    // ReSharper disable AccessToDisposedClosure
                     using var targetImage = Image.Load<Rgba32>(tileConfig.TexturePath
                                                                + tileConfig.ResourceLocation.ToFilePath());
                     var currentPoint = new Point();
@@ -130,7 +129,6 @@ public static class Program
                                 {
                                     if (!tileConfig.IgnoreForGlyphgenerate)
                                     {
-                                        
                                         currentPoint.X = x * tileConfig.Size;
                                         currentPoint.Y = y * tileConfig.Size;
 
@@ -143,7 +141,7 @@ public static class Program
                                                 new Size(tileConfig.Size)));
                                         });
 
-                                        string tempPath = tempFilePath + $"x{x}" + $"y{y}";
+                                        string tempPath = tempFilePath + "fontgen_" + $"x{x}" + $"y{y}" + Guid.NewGuid();
                                         tempImage.SaveAsPng(tempPath);
 
                                         charaterList.Add(new MinecraftFontProviderProperty
@@ -174,14 +172,13 @@ public static class Program
 
                         charaters.Add(currentLine);
                     }
-                    // ReSharper restore AccessToDisposedClosure
 
                     fontProperty.Providers.Add(new MinecraftFontProviderProperty
                     {
                         Type = ProviderType.Bitmap,
                         Ascent = 7,
                         Charaters = charaters.ToArray(),
-                        ResourcePath = tileConfig.TexturePath
+                        ResourcePath = tileConfig.ResourceLocation
                     });
 
                     break;
@@ -236,6 +233,8 @@ public static class Program
                 break;
             
             default:
+                if (!File.Exists(outputFilePath)) Directory.CreateDirectory(Path.GetDirectoryName(outputFilePath));
+
                 File.WriteAllText(outputFilePath, result);
                 break;
         }
